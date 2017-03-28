@@ -4,31 +4,31 @@ var state = {
             question: 'In the 2016 film "Zootopia", Judy Hopps is relegated to what duty on her first day as a police officer?',
             answer: ['Traffic Control', 'Office Filing', 'Parking Duty', 'Domestic Disturbance'],
             correct: 2,
-            userAnswer: 0
+            userAnswer: ''
         },
         {
             question: 'Which 2016 adult CGI-animated film is a parody of Disney, Pixar, DreamWorks Animation and Illumination Entertainment animated films? ',
             answer: ['Henchmen', 'Moana', 'Norm of the North', 'Sausage Party'],
             correct: 3,
-            userAnswer: 0
+            userAnswer: ''
         },
         {
             question: "In what year was Alfred Hitchcock's psychological thriller Psycho released?",
             answer: ['1959', '1960', '1961', '1962'],
             correct: 1,
-            userAnswer: 0
+            userAnswer: ''
         },
         {
             question: 'Who played the female lead role in the 1986 sci-fi movie Aliens?',
             answer: ['Kim Basinger', 'Kelly McGillis', 'Sigourney Weaver', 'Geena Davis'],
             correct: 2,
-            userAnswer: 0
+            userAnswer: ''
         },
         {
             question: 'Which one of these is from 101 Dalmatians?',
             answer: ['Roo', 'Roger', 'Rabbit', 'Rafiki'],
             correct: 1,
-            userAnswer: 0
+            userAnswer: ''
         }
 
     ],
@@ -104,6 +104,10 @@ function answerSelect(answer) {
 }
 
 function submitAnswer() {
+    if (!state.questions[state.question].userAnswer){
+        alert('Chose an answer.');
+        return
+    }
     var question = state.questions[state.question];
     if (state.questions[state.question].userAnswer === state.questions[state.question].correct){
         $('.answerVerdict').text(`Correct!, the right answer is ${question.answer[state.questions[state.question].correct]}.`);
