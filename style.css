@@ -1,0 +1,125 @@
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    height: 50px;
+}
+
+.frontPage {
+    width: 100%;
+    margin-top: 40%;
+}
+
+h1 {
+    font-size: 46px;
+    text-align: center;
+}
+
+.start {
+    width: 700px;
+    height: 120px;
+    border: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #00a511;
+    font-size: 46px;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 250px;
+    outline: none;
+}
+
+button:hover {
+    background-color: #00b911;
+}
+
+button:active {
+    background-color: #009111;
+}
+
+.questionPage, .resultPage {
+    margin-top: 300px;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.answer1, .answer2, .answer3, .answer4 {
+    display: inline-block;
+    width: 310px;
+    margin: 7px;
+    border-radius: 10px;
+    background-color: lightgray;
+    font-size: 18px;
+    padding: 10px ;
+}
+
+.answer1:hover, .answer2:hover, .answer3:hover, .answer4:hover {
+    background-color: #e2e2e2;
+}
+
+.selected {
+    border: solid 4px #1e90ff;
+    margin: 3px;
+}
+
+.submit {
+    width: 300px;
+    height: 50px;
+    border: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #00a511;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 50px;
+    outline: none;
+}
+
+.continue {
+    width: 300px;
+    height: 50px;
+    border: none;
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #00a511;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 50px;
+    outline: none;
+}
+
+.score {
+    margin-top: 5px;
+    font-size: 23px;
+    display: inline-block;
+    float: left;
+}
+
+.questionNumber {
+    margin-top: 5px;
+    font-size: 23px;
+    display: inline-block;
+    float: right;
+}
+
+.answerVerdict {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 15px;
+}
